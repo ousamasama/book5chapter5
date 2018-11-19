@@ -1,0 +1,52 @@
+{
+  "employees": [
+    {
+      "id": 4,
+      "name": "Blaise Roberts"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "500 Circle Way"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "10101 Binary Court"
+    }
+  ],
+  "animals": [
+    {
+      "id": 2,
+      "name": "Jack"
+    },
+    {
+      "id": 3,
+      "name": "Angus"
+    },
+    {
+      "id": 4,
+      "name": "Henley"
+    },
+    {
+      "id": 6,
+      "name": "Checkers"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Ousama"
+    },
+    {
+      "id": 2,
+      "name": "Zac"
+    },
+    {
+      "id": 3,
+      "name": "Elyse"
+    }
+  ]
+}

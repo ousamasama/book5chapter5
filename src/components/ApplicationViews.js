@@ -39,7 +39,8 @@ export default class ApplicationViews extends Component {
         employees: [],
         locations: [],
         animals: [],
-        owners: []
+        owners: [],
+        animalsOwned: []
     }
 
     componentDidMount() {
@@ -59,6 +60,10 @@ export default class ApplicationViews extends Component {
             .then(() => fetch("http://localhost:5002/locations")
             .then(r => r.json()))
             .then(locations => newState.locations = locations)
+            .then(() => this.setState(newState))
+            .then(() => fetch("http://localhost:5002/animalsOwned")
+            .then(r => r.json()))
+            .then(animalsOwned => newState.animalsOwned = animalsOwned)
             .then(() => this.setState(newState))
     }
 
@@ -108,7 +113,12 @@ export default class ApplicationViews extends Component {
                     return <LocationList locations={this.state.locations} />
                 }} />
                 <Route exact path="/animals" render={(props) => {
-                    return <AnimalList deleteAnimal={this.deleteAnimal} animals={this.state.animals} />
+                    return <AnimalList 
+                    deleteAnimal={this.deleteAnimal} 
+                    animals={this.state.animals} 
+                    owners={this.state.owners}
+                    animalsOwned={this.state.animalsOwned}
+                    />
                 }} />
                 <Route path="/employees" render={(props) => {
                     return <EmployeeList fireEmployee={this.fireEmployee} employees={this.state.employees} />

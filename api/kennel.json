@@ -19,19 +19,19 @@
   ],
   "animals": [
     {
-      "id": 2,
+      "id": 1,
       "name": "Jack"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Angus"
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Henley"
     },
     {
-      "id": 6,
+      "id": 4,
       "name": "Checkers"
     }
   ],
@@ -47,6 +47,27 @@
     {
       "id": 3,
       "name": "Elyse"
+    },
+    {
+      "id": 4,
+      "name": "Brendan"
+    },
+    {
+      "id": 5,
+      "name": "Greg"
     }
+    ,
+    {
+      "id": 6,
+      "name": "Jenna"
+    }
+  ],
+  "animalsOwned": [
+    { "id": 1, "animalId": 1, "ownerId": 1 },
+    { "id": 2, "animalId": 1, "ownerId": 2 },
+    { "id": 3, "animalId": 2, "ownerId": 3 },
+    { "id": 4, "animalId": 3, "ownerId": 4 },
+    { "id": 5, "animalId": 4, "ownerId": 5 },
+    { "id": 6, "animalId": 4, "ownerId": 6 }
   ]
 }
